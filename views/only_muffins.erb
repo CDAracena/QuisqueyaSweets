@@ -1,0 +1,16 @@
+<div class="container py-4">
+  <div class="row displayRow">
+    <% @muffins.each do |muffin| %>
+    <div class="imgHolder">
+      <div class="col-lg-4"><img src="<%= muffin.image %>" width="200" height="200" class="menuImgs">
+      </div>
+      <p class="itemType py-2">
+          <%= muffin.name %>
+      </p>
+      <p class="itemPrice">
+        <%= muffin.price %>
+      </p>
+    </div>
+    <% end %>
+  </div>
+</div>

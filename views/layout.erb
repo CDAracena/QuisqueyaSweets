@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Baker-512.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico" rel="stylesheet">
+    <title>Quisqueya Sweets</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid headJumbotron">
+      <div class="container">
+        <div class="row">
+          <img src="7741.png" width="250" height="200">
+          <span class="bakeryName">Quisqueya Sweets
+          </span>
+          <div class="searchBarDiv">
+            <input type="text" class="searchBar" placeholder="Search..">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row navMenu">
+
+        <div class="col-lg-4">
+          <a href="/">
+            Home
+          </a>
+        </div>
+        <div class="Menudropdown">
+          <div class="col-lg-4">
+            Menu
+          </div>
+          <div class="dropdown-content">
+            <a href='/cookies'>Cookies
+            </a>
+            <a href='/cakes'>Cakes
+            </a>
+            <a href="/muffins">Muffins
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          About
+        </div>
+      </div>
+
+    </div>
+
+          <%= yield %>
+
+  </body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

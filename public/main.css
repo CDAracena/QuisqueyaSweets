@@ -1,0 +1,107 @@
+.headJumbotron {
+  background-image: url('bakerybaking.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  margin: 0px !important;
+}
+
+.bakeryName {
+  font-family: 'Pacifico', cursive;
+  color: #ebdc81;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+
+.searchBarDiv {
+  padding-top: 7%;
+  padding-left: 4%;
+}
+
+.searchBar {
+  border-radius: 3px;
+  font-family: 'Abril Fatface';
+  color: #bf445a;
+  background-color: #ebdc81;
+}
+
+.navMenu {
+  background-color: #d87c9e;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #ebdc81;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a:link {
+  color: #ebdc81;
+}
+
+a:hover {
+  color: #ebdc81 !important;
+  text-decoration: none !important;
+}
+
+a:visited {
+  color: #ebdc81;
+}
+
+.Menudropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d87c9e;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ebdc81;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #bf445a;
+}
+
+.Menudropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Menudropdown:hover {
+  display: block;
+}
+
+.menuImgs {
+  border-radius: 15px;
+}
+
+.imgHolder {
+  border: 4px solid #d87c9e;
+  border-radius: 25px;
+  background-color: #d87c9e;
+}
+
+.itemType {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.itemPrice {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.displayRow {
+  justify-content: space-around;
+}

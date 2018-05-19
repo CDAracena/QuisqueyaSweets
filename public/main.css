@@ -52,6 +52,7 @@ a:visited {
 .Menudropdown {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -83,25 +84,35 @@ a:visited {
 }
 
 .menuImgs {
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .imgHolder {
   border: 4px solid #d87c9e;
   border-radius: 25px;
-  background-color: #d87c9e;
+  background-color: #d87c9eba;
+  padding-top: 20px;
 }
 
 .itemType {
   text-align: center;
   font-family: 'Pacifico', cursive;
+  color: #ebdc81;
 }
 
 .itemPrice {
   text-align: center;
   font-family: 'Abril Fatface', cursive;
+  color: #ffffff;
 }
 
 .displayRow {
   justify-content: space-around;
+}
+
+.itemContainer {
+  background-image: url('imgContainerbackground.jpeg');
+  background-color: #efce5c2e;
+  background-size: cover;
+  background-position: center;
 }

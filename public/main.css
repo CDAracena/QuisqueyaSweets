@@ -98,12 +98,14 @@ a:visited {
   text-align: center;
   font-family: 'Pacifico', cursive;
   color: #ebdc81;
+  font-size: 20px;
 }
 
 .itemPrice {
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   color: #ffffff;
+  font-size: 20px;
 }
 
 .displayRow {
@@ -115,4 +117,27 @@ a:visited {
   background-color: #efce5c2e;
   background-size: cover;
   background-position: center;
+}
+
+.Footer {
+  background-color: #ebdc8159;
+  color: #d87c9e;
+  text-align: center;
+  padding: 15px;
+}
+
+.FooterIcons {
+  font-size: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.newsLetterDiv {
+  font-size: 18px;
+  font-family: 'Abril Fatface';
+  text-align: left;
+}
+
+.signUpEmail {
+  display: inline-flex !important;
 }

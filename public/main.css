@@ -34,6 +34,7 @@
   font-size: 23px;
   display: flex;
   justify-content: space-around;
+  padding: 2px;
 }
 
 a:link {
@@ -136,8 +137,17 @@ a:visited {
   font-size: 18px;
   font-family: 'Abril Fatface';
   text-align: left;
+  padding-top: 10px;
 }
 
 .signUpEmail {
   display: inline-flex !important;
+}
+
+.emailSignUpbutton {
+  color: #ebdc81;
+  background-color: #d87c9e;
+  border-radius: 5px;
+  border-style: outset;
+  cursor: pointer;
 }

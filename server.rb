@@ -54,6 +54,28 @@ end
 #   redirect '/'
 #   erb(:layout)
 # end
+# post('/') do
+#   # include SendGrid
+#
+#   from = Email.new(email: 'test@example.com')
+#   to = Email.new(email: 'test@example.com')
+#   subject = 'Sending with SendGrid is Fun'
+#   content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
+#   mail = Mail.new(from, subject, to, content)
+#
+#   sg = SendGrid::API.new(api_key: ENV['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
+# '])
+#   response = sg.client.mail._('send').post(request_body: mail.to_json)
+#   puts response.status_code
+#   puts response.body
+#   puts response.parsed_body
+#   puts response.headers
+#
+#   redirect '/'
+#   erb(:layout)
+# end
+
+
 
 get('/cookies') do
   first_cookie = Cookie.new('Supa Chocolate Chip', "$100", "chocolatechip1.jpg")

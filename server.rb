@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sendgrid-ruby'
+require 'mailgun'
 
 
 class Cookie
@@ -34,6 +35,22 @@ get('/') do
   erb(:index)
 end
 
+
+post('/') do
+  mg_client = Mailgun::Client.new(ENV['MAIL_GUN_API_KEY'])
+
+# Define your message parameters
+message_params =  { from: 'crebelz174@gmail.com',
+                  to:   params[:inputParams],
+                  subject: 'Quisqueya Sweets Newsletter!',
+                  text:    'Thank you, you are on your first path to embracing <h1>Dominican sweetness!</h1>'
+                }
+
+# Send your message through the client
+mg_client.send_message(ENV['MAIL_GUN_API_DOMAIN'], message_params)
+
+  redirect '/'
+end
 
 get('/cookies') do
   first_cookie = Cookie.new('Supa Chocolate Chip', "$100", "chocolatechip1.jpg")

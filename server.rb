@@ -35,6 +35,7 @@ get('/') do
   erb(:index)
 end
 
+
 post('/') do
   mg_client = Mailgun::Client.new(ENV['MAIL_GUN_API_KEY'])
 

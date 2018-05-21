@@ -111,6 +111,7 @@ a:visited {
 
 .displayRow {
   justify-content: space-around;
+  padding: 25px
 }
 
 .itemContainer {
@@ -150,4 +151,24 @@ a:visited {
   border-radius: 5px;
   border-style: outset;
   cursor: pointer;
+}
+
+.aboutusContainer {
+  background-color: #df8f9ec7;
+  color: #f8f2d3;
+}
+
+.bottomDiv {
+  background-color: #d87c9e;
+  padding: 19px;
+}
+
+.aboutusDiv {
+  padding: 25px;
+  font-size: 25px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.HoO {
+  color: #bf445a;
 }

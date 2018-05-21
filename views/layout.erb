@@ -26,14 +26,14 @@
     <div class="container-fluid">
       <div class="row navMenu">
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-4 col-xs-4">
           <a href="/">
             <i class="fa fa-home"></i>
             Home
           </a>
         </div>
         <div class="Menudropdown">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-4 col-xs-4">
             Menu
           </div>
           <div class="dropdown-content">
@@ -45,14 +45,16 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-4">
-          About
+        <div class="col-lg-4 col-sm-4 col-xs-4">
+          <a href="/about">
+            About
+          </a>
         </div>
       </div>
     </div>
 
     <%= yield %>
-
+    <div class="row-fluid bottomDiv"></div>
     <div class="container-fluid Footer">
       <div class="row">
         <div class="col-lg-4 FooterIcons">
@@ -60,15 +62,19 @@
           <i class="fa fa-twitter"></i>
           <i class="fa fa-facebook-f"></i>
         </div>
+
         <div class="col-lg-8 newsLetterDiv">
-          Sign Up For Our Newsletter For Events & Updates:
-          <input type="email" class="form-control form-control-sm col-lg-4 col-xs-4 col-sm-4 signUpEmail" placeholder="Enter email">
-          <button class="emailSignUpbutton">Sign Up</button>
+          <form action='/' method="POST">
+            Sign Up For Our Newsletter For Events & Updates:
+            <input type="email" class="form-control form-control-sm col-lg-4 col-xs-4 col-sm-4 signUpEmail" placeholder="Enter email">
+            <button class="emailSignUpbutton" name="newsletter_sign_up">Sign Up</button>
+          </form>
         </div>
+
       </div>
     </div>
   </div>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

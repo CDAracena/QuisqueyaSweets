@@ -1,0 +1,25 @@
+<div class="container-fluid py-4 itemContainer">
+  <div class="row displayRow">
+
+    <div>
+      <h1 style="color: pink">Thank you for signing up to our newsletter. We'll keep you updated with all our future products and services. Here is our current catalog:
+      </h1>
+    </div>
+    <% @catalog.each do |item| %>
+      <div class="imgHolder">
+        <p class="itemType py-2 emailTemplate">
+          <h2>
+            <%= item.name %>
+            <h2></p>
+            <p class="itemPrice emailTemplate">
+              <%= item.price %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <footer>
+      <h2>
+      Feel free to contact us at (555) 555 - 555 for any suggestions or queries
+    </h2>
+    </footer>

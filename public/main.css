@@ -4,6 +4,7 @@
   background-position: center;
   background-blend-mode: darken;
   margin: 0px !important;
+  text-shadow: 3px 2px #aa2d24;
 }
 
 .bakeryName {
@@ -86,6 +87,8 @@ a:visited {
 
 .menuImgs {
   border-radius: 5px;
+  width: 200px;
+  height: 200px
 }
 
 .imgHolder {
@@ -171,4 +174,160 @@ a:visited {
 
 .HoO {
   color: #bf445a;
+}
+
+.hamburgermenu {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d87c9ef2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ebdc81;
+  display: block;
+  transition: 0.3s;
+  text-shadow: 2px 2px #aa2d24;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .hamburgerToggle {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.closebutton {
+  font-size: 40px;
+  text-shadow: 2px 2px #aa2d24;
+}
+
+.emailTemplate {
+  color: #d87c9e;
+}
+
+@media (max-width: 400px) {
+  .headJumbotron {
+    text-align: center;
+  }
+  .searchBarDiv {
+    margin: auto;
+  }
+  .dominicanFlag {
+    margin: auto;
+  }
+  .imgHolder {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .newsLetterDiv {
+    text-align: center;
+  }
+  .menuImgs {
+    width: 250px;
+  }
+  .navoption {
+    display: none;
+  }
+  .hamburgermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .searchBar {
+    padding: 5px;
+  }
+  .itemType {
+    padding-bottom: 0px !important;
+    font-size: 28px;
+  }
+  .emailSignUpbutton {
+    margin-top: 5px;
+  }
+  .aboutusDiv {
+    padding: 0px !important;
+  }
+  .sideItem {
+    padding-bottom: 15px;
+  }
+  .aboutusRow {
+    padding: 15px;
+  }
+  .HoO {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .headJumbotron {
+    text-align: center;
+  }
+  .searchBarDiv {
+    margin: auto;
+  }
+  .dominicanFlag {
+    margin: auto;
+  }
+  .imgHolder {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .newsLetterDiv {
+    text-align: center;
+  }
+  .menuImgs {
+    width: 250px;
+  }
+  .navoption {
+    display: none;
+  }
+  .hamburgermenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .searchBar {
+    padding: 5px;
+  }
+  .itemType {
+    padding-bottom: 0px !important;
+    font-size: 28px;
+  }
+  .emailSignUpbutton {
+    margin-top: 5px;
+  }
+  .aboutusDiv {
+    padding: 0px !important;
+  }
+  .sideItem {
+    padding-bottom: 15px;
+  }
+  .aboutusRow {
+    padding: 15px;
+  }
+  .HoO {
+    font-size: 20px;
+  }
 }

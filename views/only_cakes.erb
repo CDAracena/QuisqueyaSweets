@@ -1,16 +1,16 @@
-<div class="container-fluid py-4 itemContainer" >
+<div class="container-fluid py-4 itemContainer">
   <div class="row displayRow">
     <% @cakes.each do |cake| %>
-    <div class="imgHolder">
-      <div class="col-lg-4"><img src="<%= cake.image %>" width="200" height="200" class="menuImgs">
-      </div>
-      <p class="itemType py-2">
+      <div class="imgHolder">
+        <div class="col-lg-4"><img src="<%= cake.image %>" class="menuImgs">
+        </div>
+        <p class="itemType py-2">
           <%= cake.name %>
-      </p>
-      <p class="itemPrice">
-        <%= cake.price %>
-      </p>
-    </div>
+        </p>
+        <p class="itemPrice">
+          <%= cake.price %>
+        </p>
+      </div>
     <% end %>
   </div>
 </div>

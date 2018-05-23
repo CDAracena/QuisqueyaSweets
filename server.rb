@@ -37,13 +37,28 @@ end
 
 
 post('/') do
+  first_muffin = Muffin.new('Tres Leches', '$200', 'treslechesCC.jpeg')
+  second_muffin = Muffin.new('Chocolate', '$900', 'chocolateCC.jpg')
+  third_muffin = Muffin.new('Almond', '$1000', 'almondCC.jpg')
+
+  first_cake = Cake.new('Tres Leches', '$500', 'tresleches1.jpg')
+  second_cake = Cake.new('Fudge Brownie', '$800', 'fudgebrowniecake.JPG')
+  third_cake = Cake.new('Red Velvet', '$300', 'redvelvetcake.jpg')
+
+  first_cookie = Cookie.new('Supa Chocolate Chip', "$100", "chocolatechip1.jpg")
+  second_cookie = Cookie.new('Raisin Cookie', "$170", "raisincookie.jpg")
+  third_cookie = Cookie.new('Peanut Butter Cookie', "$240", "peanutbuttercookie.jpg")
+
+  @catalog = [first_muffin, second_muffin, third_muffin, first_cake, second_cake, third_cake,
+  first_cookie, second_cookie, third_cookie]
+
   mg_client = Mailgun::Client.new(ENV['MAIL_GUN_API_KEY'])
 
 # Define your message parameters
 message_params =  { from: 'crebelz174@gmail.com',
                   to:   params[:inputParams],
                   subject: 'Quisqueya Sweets Newsletter!',
-                  text:    'Thank you, you are on your first path to embracing <h1>Dominican sweetness!</h1>'
+                  html:    erb(:email_template, layout: false)
                 }
 
 # Send your message through the client
@@ -83,4 +98,24 @@ end
 
 get('/about') do
   erb(:about)
+end
+
+get('/email') do
+
+  first_muffin = Muffin.new('Tres Leches', '$200', 'treslechesCC.jpeg')
+  second_muffin = Muffin.new('Chocolate', '$900', 'chocolateCC.jpg')
+  third_muffin = Muffin.new('Almond', '$1000', 'almondCC.jpg')
+
+  first_cake = Cake.new('Tres Leches', '$500', 'tresleches1.jpg')
+  second_cake = Cake.new('Fudge Brownie', '$800', 'fudgebrowniecake.JPG')
+  third_cake = Cake.new('Red Velvet', '$300', 'redvelvetcake.jpg')
+
+  first_cookie = Cookie.new('Supa Chocolate Chip', "$100", "chocolatechip1.jpg")
+  second_cookie = Cookie.new('Raisin Cookie', "$170", "raisincookie.jpg")
+  third_cookie = Cookie.new('Peanut Butter Cookie', "$240", "peanutbuttercookie.jpg")
+
+  @catalog = [first_muffin, second_muffin, third_muffin, first_cake, second_cake, third_cake,
+  first_cookie, second_cookie, third_cookie]
+
+  erb(:email_template)
 end

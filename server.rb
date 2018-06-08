@@ -3,6 +3,8 @@ require 'sendgrid-ruby'
 require 'mailgun'
 
 
+
+# this should be defined in a separate file
 class Cookie
   attr_accessor :name, :price, :image
   def initialize(name, price, image)
@@ -12,6 +14,7 @@ class Cookie
   end
 end
 
+# this should be defined in a separate file
 class Cake
   attr_accessor :name, :price, :image
   def initialize(name, price, image)
@@ -21,6 +24,7 @@ class Cake
   end
 end
 
+# this should be defined in a separate file
 class Muffin
   attr_accessor :name, :price, :image
   def initialize(name, price, image)
@@ -49,11 +53,14 @@ post('/') do
   second_cookie = Cookie.new('Raisin Cookie', "$170", "raisincookie.jpg")
   third_cookie = Cookie.new('Peanut Butter Cookie', "$240", "peanutbuttercookie.jpg")
 
+  # good job on using these in an array
   @catalog = [first_muffin, second_muffin, third_muffin, first_cake, second_cake, third_cake,
   first_cookie, second_cookie, third_cookie]
 
   mg_client = Mailgun::Client.new(ENV['MAIL_GUN_API_KEY'])
 
+
+ # indentation is a little off here
 # Define your message parameters
 message_params =  { from: 'crebelz174@gmail.com',
                   to:   params[:inputParams],
